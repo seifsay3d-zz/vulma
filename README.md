@@ -2,6 +2,32 @@
 
 > Webpack Vuejs starter kit
 
+## Included
+Vue Resource https://github.com/pagekit/vue-resource
+Font Awesome https://github.com/Justineo/vue-awesome
+Progress Bar https://github.com/hilongjw/vue-progressbar
+Progress Bar interceptor https://github.com/staskjs/vue-resource-progressbar-interceptor
+Lazy Image https://github.com/yyh1102/vue-lazyload-images
+Carousel https://github.com/SSENSE/vue-carousel
+Webpack Favicons https://github.com/jantimon/favicons-webpack-plugin
+Click Away https://github.com/simplesmiler/vue-clickaway
+Config Setup
+Vue.http.options.root = '/root';
+Vue.use(VueProgressBar, {
+  color: 'green',
+  failedColor: 'red',
+  thickness: '3px',
+  transition: {
+    speed: '0.2s',
+    opacity: '0.6s',
+    termination: 300,
+  },
+  autoRevert: true,
+  location: 'top',
+  inverse: false,
+});
+
+
 ## Build Setup
 
 ``` bash
