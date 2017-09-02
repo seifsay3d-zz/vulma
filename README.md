@@ -11,7 +11,9 @@ Lazy Image https://github.com/yyh1102/vue-lazyload-images
 Carousel https://github.com/SSENSE/vue-carousel
 Webpack Favicons https://github.com/jantimon/favicons-webpack-plugin
 Click Away https://github.com/simplesmiler/vue-clickaway
-Config Setup
+
+
+### Config Setup
 Vue.http.options.root = '/root';
 Vue.use(VueProgressBar, {
   color: 'green',
