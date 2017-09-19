@@ -9,24 +9,26 @@ import VueCarousel from 'vue-carousel';
 import 'vue-awesome/icons';
 import Icon from 'vue-awesome/components/Icon';
 import Vue2Filters from 'vue2-filters';
+import VueAnalytics from 'vue-analytics';
+import * as VueGoogleMaps from 'vue2-google-maps';
+import SocialSharing from 'vue-social-sharing';
 import App from './App';
 import router from './router';
 
+Vue.use(SocialSharing);
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyBvWE_sIwKbWkiuJQOf8gSk9qzpO96fhfY',
+    libraries: 'places',
+  },
+});
+Vue.use(VueAnalytics, {
+  id: 'UA-XXX-X',
+  router,
+});
 Vue.component('icon', Icon);
 Vue.use(VueResource);
-Vue.use(VueProgressBar, {
-  color: 'green',
-  failedColor: 'red',
-  thickness: '3px',
-  transition: {
-    speed: '0.2s',
-    opacity: '0.6s',
-    termination: 300,
-  },
-  autoRevert: true,
-  location: 'top',
-  inverse: false,
-});
+Vue.use(VueProgressBar);
 Vue.use(VueResourceProgressBarInterceptor);
 Vue.use(VueLazyImage);
 Vue.use(VueCarousel);
