@@ -5,7 +5,7 @@
         <a class="navbar-item" href="http://bulma.io">
           <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
         </a>
-
+        
 
         <div class="navbar-burger burger" data-target="navMenubd-example">
           <span></span>
@@ -18,7 +18,7 @@
         <div class="navbar-end">
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link  is-active" href="/documentation/overview/start/">
-              Docs
+              Docs {{$store.getters.locale}}
             </a>
             <div class="navbar-dropdown ">
               <a class="navbar-item " href="/documentation/overview/start/">
@@ -174,23 +174,48 @@
     <div class="section">
       <div class="columns">
         <div class="column">
+          <h1>Included</h1>
+          <ol>
+            <li> VueResource </li>
+            <li> VueProgressBar </li>
+            <li> VueResourceProgressBarInterceptor </li>
+            <li> VueLazyImage </li>
+            <li> VueCarousel </li>
+            <li> 'vue-awesome/icons';</li>
+            <li> Icon </li>
+            <li> FlagIcon </li>
+            <li> { directive as onClickaway } </li>
+            <li> Vue2Filters </li>
+            <li> VueAnalytics </li>
+            <li> * as VueGoogleMaps </li>
+            <li> SocialSharing </li>
+            <li> Paginate </li>
+            <li> VueTimeago </li>
+            <li> VueI18n </li>
+            <li> VueScrollTo </li>
+            <li> Vuex </li>
+            <li> createPersist </li>
+            <li> App </li>
+            <li> router </li>
+            <li> translation </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="columns">
+        <div class="column">
           <h1>To Do</h1>
           <ol>
-            <li>Local Storage</li>
-            <li>Translation</li>
             <li>File Upload</li>
             <li>Mega Menu</li>
             <li>Page Section Component</li>
             <li>More Vue-Bulma Componenets</li>
             <li>Validation</li>
-            <li>Scroll To</li>
             <li>Vue Router Animations</li>
-            <li>Google Maps</li>
-            <li>Google Analytics</li>
             <li>Meta Tags</li>
             <li>Break points</li>
             <li>Reset File</li>
-            <li>Social Sharing</li>
             <li>Authentication</li>
             <li>Bread crumbs</li>
             <li>Vue Bugsnag</li>
