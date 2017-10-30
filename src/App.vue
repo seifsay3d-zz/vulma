@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <vue-progress-bar></vue-progress-bar>
-    <router-view></router-view>
+    <base-layout></base-layout>
   </div>
 </template>
 
 <script>
+import baseLayout from '@/layout/base';
 export default {
   name: 'app',
+  components: {
+    baseLayout,
+  },
 };
 </script>
 
 <style lang="scss">
-  @import 'assets/scss/vars.scss';
-  @import '~bulma';  
-  @import 'assets/scss/reset.scss';
+  @import '~bulma';
 </style>
