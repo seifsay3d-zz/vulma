@@ -1,0 +1,96 @@
+.section.is-primary{
+  background:$primary;
+  color:white;
+}
+.has-gray-background{
+  background:#f7f9f9;
+}
+.is-hoverable{
+  cursor:pointer;
+}
+.paginate{
+  li {
+    display: inline;
+    border:1px;
+    border-radius:50%;
+    a{
+      display: inline-block;
+      color:#222533;
+      font-weight:400;
+      margin:0px 2px;
+      border: 1px solid #222533;
+      border-radius: 50%;
+      padding: 2px;
+      width: 29px;
+      font-size: 15px;
+      text-indent: 1;
+      text-align: center;
+      outline:none;
+      &:hover{
+        border:1px solid $primary;
+        background:$primary;
+        color:white;
+      }
+    }
+    &.active{
+      a{
+       border:1px solid $primary;
+       background:$primary;
+       color:white; 
+     }
+   }
+ }
+}
+.m-t-5{
+  margin-top:5px;
+}
+.m-b-15{
+  margin-bottom:15px;
+}
+.m-b-25{
+  margin-bottom:15px;
+}
+.is-fullheight{
+  min-height:60vh;
+}
+.p-0-l-m{
+  @media screen and (min-width:769px){
+    padding-left:0px;  
+  }
+  
+}
+.p-0-r-m{
+  @media screen and (min-width:769px){
+    padding-right:0px;
+  }
+}
+
+h1.is-white,
+h2.is-white,
+h3.is-white,
+h4.is-white,
+h5.is-white,
+h6.is-white,
+.subtitle.is-white,
+.title.is-white{
+  color:white;
+}
+h1.is-info,
+h2.is-info,
+h3.is-info,
+h4.is-info,
+h5.is-info,
+h6.is-info,{
+  color:$info;
+}
+h1.is-primary,
+h2.is-primary,
+h3.is-primary,
+h4.is-primary,
+h5.is-primary,
+h6.is-primary,{
+  color:$primary;
+}
+.p-10{
+  padding:10px !important;
+}

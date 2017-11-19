@@ -1,4 +1,5 @@
 import createPersist from 'vuex-localstorage';
+import translations from '@/translations';
 
 const state = {
     locale: 'en',
@@ -11,7 +12,7 @@ const getters = {
 const mutations = {
     setLocale(state, locale) {
       state.locale = locale;
-      app.$translations.locale = locale;
+      translations.locale = locale;
     },
   };
 const plugins = [createPersist({
