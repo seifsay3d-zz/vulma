@@ -4,9 +4,10 @@ var path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
+    apiUrl:'/api',
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: 'fstatic',
     assetsPublicPath: '/',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
@@ -23,9 +24,10 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
+    apiUrl:'http://realhub.nbhood.com/api',
     port: 8080,
     autoOpenBrowser: true,
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: 'fstatic',
     assetsPublicPath: '/',
     proxyTable: {},
     // CSS Sourcemaps off by default because relative paths are "buggy"
