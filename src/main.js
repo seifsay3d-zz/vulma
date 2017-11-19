@@ -9,8 +9,6 @@ import plugins from './plugins';
 import translation from './translations';
 
 Vue.config.productionTip = false;
-Vue.http.options.root = 'https://jsonplaceholder.typicode.com/';
-Vue.http.options.emulateJSON = true;
 
 /* eslint-disable no-new */
 new Vue({

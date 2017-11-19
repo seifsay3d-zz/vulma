@@ -1,7 +1,4 @@
 import Vue from 'vue';
-import VueResource from 'vue-resource';
-import VueProgressBar from 'vue-progressbar';
-import VueResourceProgressBarInterceptor from 'vue-resource-progressbar-interceptor';
 import VueLazyImage from 'vue-lazy-images';
 import VueCarousel from 'vue-carousel';
 import 'vue-awesome/icons';
@@ -29,9 +26,6 @@ Vue.use(VueAnalytics, {
   id: 'UA-XXX-X',
   router,
 });
-Vue.use(VueResource);
-Vue.use(VueProgressBar);
-Vue.use(VueResourceProgressBarInterceptor);
 Vue.use(VueLazyImage);
 Vue.use(VueCarousel);
 Vue.use(Vue2Filters);
