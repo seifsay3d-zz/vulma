@@ -23,7 +23,6 @@
                   <li>
                     <b>Core</b>
                     <ul>
-                      <li>Vue Resource</li>
                       <li>Vue Router</li>
                       <li>Google Analytics</li>
                       <li>Vuex</li>
@@ -204,9 +203,6 @@
               <network network="googleplus">
                 <icon name="google-plus"></icon>
               </network>
-              <network network="line">
-                <icon name="line"></icon>
-              </network>
               <network network="linkedin">
                 <icon name="linkedin"></icon>
               </network>
@@ -254,9 +250,7 @@
         </div>
         <div class="columns">
           <div class="column">
-            <h3 class="subtitle is-4">Progress Bar</h3>
-            <button @click="fetchData" class="button is-primary">Trigger resource</button>
-            <vue-progress-bar></vue-progress-bar>
+            
           </div>
         </div>
       </div>
@@ -271,6 +265,7 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex';
 import { Carousel, Slide } from 'vue-carousel';
 import { mixin as clickaway } from 'vue-clickaway';
 
@@ -293,8 +288,16 @@ export default {
       resource.get().then((response) => {
         this.products = response.body.results;
       });
-    }
+    },
+    ...mapActions([
+      'listEntity'
+    ]),
   },
+  computed: mapState({
+    entities: state => state.consumeRest.entities,
+    pending: state => state.consumeRest.pending,
+    error: state => state.consumeRest.error,
+  }),
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',
@@ -302,7 +305,7 @@ export default {
     };
   },
   created: function created() {
-
+    this.listEntity();
   },
 };
 </script>
